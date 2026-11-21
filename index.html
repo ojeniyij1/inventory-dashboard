@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="biewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>InventoryOS</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="app">
+            <aside class="sidebar">
+                <h2>InventoryOS</h2>
+                <nav>
+                    <a href="#">Dashbard</a>
+                    <a href="#">Inventory</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Reports</a>
+                </nav>
+            </aside>
+            <main class="main">
+                <header>
+                    <h1>26Defense Inventory Dashboard</h1>
+                    <button id="addBtn">Add Product</button>
+                </header>
+                <section class="stats">
+                    <div class="card">
+                        <p>Total Products</p>
+                        <h2 id="totalProducts">0</h2>
+                    </div>
+                    <div class="card">
+                        <p>Low Stock</p>
+                        <h2 id="lowStock">0</h2>
+
+                    </div>
+                </section>
+
+                <section class="inventory">
+                    <h2>Products</h2>
+                    <input type="search" id="searchInput" placeholder="Search Inventory...">
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>SKU</th>
+                                <th>Category</th>
+                                <th>Stock</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
